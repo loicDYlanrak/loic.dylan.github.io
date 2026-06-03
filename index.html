@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio - Étudiant Développeur</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    line-height:1.6;
+}
+
+header{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(135deg,#0f172a,#1e293b,#2563eb);
+}
+
+header h1{
+    font-size:4rem;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:1.3rem;
+    color:#cbd5e1;
+}
+
+.btn{
+    margin-top:20px;
+    display:inline-block;
+    padding:12px 25px;
+    background:#3b82f6;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#2563eb;
+}
+
+section{
+    padding:80px 10%;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:#60a5fa;
+    font-size:2.2rem;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    gap:40px;
+    align-items:center;
+}
+
+.avatar{
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    background:#2563eb;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:5rem;
+    margin:auto;
+}
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:20px;
+}
+
+.skill{
+    background:#1e293b;
+    padding:20px;
+    text-align:center;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.skill:hover{
+    transform:translateY(-5px);
+    background:#2563eb;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#60a5fa;
+    margin-bottom:10px;
+}
+
+.timeline{
+    max-width:900px;
+    margin:auto;
+}
+
+.item{
+    background:#1e293b;
+    padding:20px;
+    margin-bottom:20px;
+    border-left:5px solid #3b82f6;
+    border-radius:5px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#020617;
+    color:#94a3b8;
+}
+
+.highlight{
+    color:#60a5fa;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Développeur & Étudiant en Informatique</h1>
+    <p>Passionné par le développement logiciel, les SIG, l'IA et les solutions technologiques à impact social.</p>
+    <a href="#about" class="btn">Découvrir mon profil</a>
+</header>
+
+<section id="about">
+    <h2>À propos de moi</h2>
+
+    <div class="about">
+        <div class="avatar">💻</div>
+
+        <div>
+            <p>
+                Je suis étudiant en <span class="highlight">2ème année d'Informatique à l'ITU Université</span>.
+                Curieux, sérieux quand il le faut et passionné par la technologie,
+                j'aime concevoir des applications capables d'apporter des solutions
+                concrètes aux problèmes du quotidien.
+            </p>
+
+            <br>
+
+            <p>
+                Je travaille sur différents domaines :
+                développement logiciel, développement web,
+                systèmes d'information géographique (SIG),
+                intelligence artificielle, bases de données,
+                énergie solaire et solutions numériques pour Madagascar.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Compétences Techniques</h2>
+
+    <div class="skills">
+        <div class="skill">Java</div>
+        <div class="skill">Python</div>
+        <div class="skill">C / C++</div>
+        <div class="skill">PHP</div>
+        <div class="skill">.NET</div>
+        <div class="skill">Spring Boot</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">PostgreSQL</div>
+        <div class="skill">JDBC</div>
+        <div class="skill">HTML / CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">SIG / Cartographie</div>
+    </div>
+</section>
+
+<section>
+    <h2>Projets Réalisés</h2>
+
+    <div class="projects">
+
+        <div class="card">
+            <h3>SGBD en Java</h3>
+            <p>
+                Développement d'un système de gestion de base de données
+                avec serveur Socket, client Socket, interface graphique
+                et couche JDBC.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Projet Tsena Tana</h3>
+            <p>
+                Gestion des marchés et des paiements avec Python
+                et base de données Access.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Jeu SFML en C++</h3>
+            <p>
+                Jeu de compétition de natation avec plusieurs phases
+                de tournoi et gestion des classements.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Système de Bibliothèque</h3>
+            <p>
+                Gestion des prêts, retours, réservations,
+                pénalités et historique des adhérents.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Projet SIG Minier</h3>
+            <p>
+                Plateforme cartographique permettant de consulter
+                les ressources minières de Madagascar.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>IA pour Problèmes Quotidiens</h3>
+            <p>
+                Recherche autour d'une intelligence artificielle
+                utilisant l'apprentissage par renforcement afin
+                d'analyser les plaintes et besoins de la population.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>Parcours</h2>
+
+    <div class="timeline">
+
+        <div class="item">
+            <h3>ITU Université</h3>
+            <p>Études en Informatique</p>
+        </div>
+
+        <div class="item">
+            <h3>Développement Logiciel</h3>
+            <p>
+                Conception d'applications Java, Python,
+                C++, Web et bases de données.
+            </p>
+        </div>
+
+        <div class="item">
+            <h3>Innovation & Impact Social</h3>
+            <p>
+                Intérêt pour les solutions numériques,
+                l'énergie solaire et les systèmes intelligents
+                pouvant contribuer au développement de Madagascar.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>Objectifs</h2>
+
+    <div class="card">
+        <p>
+            ✔ Devenir un ingénieur logiciel expérimenté.<br><br>
+
+            ✔ Développer des solutions innovantes pour Madagascar.<br><br>
+
+            ✔ Créer des projets utilisant l'IA, les SIG et les énergies renouvelables.<br><br>
+
+            ✔ Participer à la transformation numérique et au développement durable.
+        </p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 - Portfolio Personnel | Développeur Informatique</p>
+</footer>
+
+</body>
+</html>
